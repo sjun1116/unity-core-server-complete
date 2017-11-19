@@ -68,7 +68,7 @@ namespace DotnetCoreServer.Models
                         level, experience , name ,mana,
                         money, magicdamege, scenenumber,
                         str , int, statpoint, xpos, ypos, zpos,
-                        critical ,criticaldamege
+                        critical ,criticaldamege,dex
                     FROM tb_user 
                     WHERE user_id = {0}",
                      UserID);
@@ -114,7 +114,8 @@ namespace DotnetCoreServer.Models
                             user.yPos = reader.GetInt32(27);
                             user.zPos = reader.GetInt32(28);
                             user.Critical = reader.GetInt32(29);
-                            user.CriticalDamege = reader.GetInt32(30);                            
+                            user.CriticalDamege = reader.GetInt32(30);
+                            user.Dex = reader.GetInt32(31);
                         }
                     }
                 }
