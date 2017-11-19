@@ -32,7 +32,6 @@ namespace DotnetCoreServer.Models
         public int MagicDamege;
         public int SceneNumber;
         public int Str;
-        public int Dex;
         public int Int;
         public int Con;
         public int StatPoint;
@@ -41,5 +40,6 @@ namespace DotnetCoreServer.Models
         public int zPos;
         public float Critical;
         public float CriticalDamege;
+        public int Dex;
     }
 }
