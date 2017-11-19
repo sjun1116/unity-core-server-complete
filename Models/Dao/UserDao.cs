@@ -157,14 +157,14 @@ namespace DotnetCoreServer.Models
                         health_level = {4}, defense_level = {5}, damage_level = {6}, speed_level = {7},
                         diamond = {8}, point = {9}, name = {10} ,mana = {11}, money = {12}, magicdamege = {13},
                         scenenumber = {14}, str= {15} , int, statpoint = {16}, xpos = {17}, ypos = {18}, 
-                        zpos = {19}, critical = {20} ,criticaldamege = {21}  
-                    WHERE user_id = {22}
+                        zpos = {19}, critical = {20} ,criticaldamege = {21} ,dex = {22}
+                    WHERE user_id = {23}
                     ",
                     user.Health, user.Defense, user.Damage, user.Speed,
                     user.HealthLevel, user.DefenseLevel, user.DamageLevel, user.SpeedLevel,
                     user.Diamond, user.Point, user.Name, user.Mana, user.Money,  user.MagicDamege, 
                     user.SceneNumber, user.Str, user.Int, user.StatPoint, user.xPos, user.yPos, 
-                    user.zPos, user.Critical, user.CriticalDamege, user.UserID
+                    user.zPos, user.Critical, user.CriticalDamege, user.Dex, user.UserID
                      );
 
                 Console.WriteLine(query);
