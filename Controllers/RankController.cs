@@ -30,7 +30,7 @@ namespace DotnetCoreServer.Controllers
             result.ResultCode = 1;
             result.Message = "Success";
 
-            return Json(result.JsonRequestBehavior.AllowGet);
+            return result;
 
         }
 
